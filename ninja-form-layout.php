@@ -115,7 +115,9 @@ function ninja_forms_register_field_fieldset_end(){
 		'process_field' => false,
 	);
 
-	ninja_forms_register_field('_fieldset_end', $args);
+    if( function_exists( 'ninja_forms_register_field' ) ) {
+	   ninja_forms_register_field('_fieldset_end', $args);
+    }
 }
 
 add_action('init', 'ninja_forms_register_field_fieldset_end');
@@ -148,7 +150,9 @@ function ninja_forms_register_field_div_start(){
         'process_field' => false,
     );
 
-    ninja_forms_register_field('_div_start', $args);
+    if( function_exists( 'ninja_forms_register_field' ) ) {
+        ninja_forms_register_field('_div_start', $args);
+    }
 }
 
 add_action('init', 'ninja_forms_register_field_div_start');
@@ -181,7 +185,9 @@ function ninja_forms_register_field_div_end(){
         'process_field' => false,
     );
 
-    ninja_forms_register_field('_div_end', $args);
+    if( function_exists( 'ninja_forms_register_field' ) ) {
+        ninja_forms_register_field('_div_end', $args);
+    }
 }
 
 add_action('init', 'ninja_forms_register_field_div_end');

@@ -1,0 +1,24 @@
+{
+  "name": "wandl/ninja-forms-layout",
+  "description": "Adds extra layout options for ninja-forms",
+  "keywords": ["wordpress", "plugin", "wandl"],
+  "homepage": "https://github.com/wandl/ninja-forms-layout",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "marclloyd77",
+      "homepage": "https://profiles.wordpress.org/marclloyd77/"
+    },
+    {
+      "name": "Joseph Blythe",
+      "email": "josephb@wellnesslifestyles.com.au",
+      "homepage": "https://wellnesslifestyles.com.au"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.3.2",
+    "composer/installers": "v1.0.6",
+    "wpackagist-plugin/ninja-forms": ">=2.9.27"
+  }
+}
